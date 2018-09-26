@@ -1,4 +1,4 @@
-package question.chapter_2;
+package exercise.chapter_2;
 
 /**
  *  第二章  一切皆是对象
