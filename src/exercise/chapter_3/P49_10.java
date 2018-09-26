@@ -8,8 +8,8 @@ package exercise.chapter_3;
  */
 public class P49_10 {
     public static void main(String[] args) {
-        int a = 0xaaaa;
-        int b = 0x5555;
+        int a = 0xaaaaaaaa;
+        int b = 0x5555aaaa;
         System.out.println(Integer.toBinaryString(a));
         System.out.println(Integer.toBinaryString(b));
 
@@ -20,11 +20,12 @@ public class P49_10 {
         System.out.println("~b = " +  Integer.toBinaryString(~b));
     }
 }/* Output:
-        1010101010101010
-        101010101010101
-        a & b = 0
-        a | b = 1111111111111111
-        a ^ b = 1111111111111111
-        ~a = 11111111111111110101010101010101
-        ~b = 11111111111111111010101010101010
+        10101010101010101010101010101010
+        1010101010101011010101010101010
+        a & b = 1010101010101010
+        a | b = 11111111111111111010101010101010
+        a ^ b = 11111111111111110000000000000000
+        ~a = 1010101010101010101010101010101
+        ~b = 10101010101010100101010101010101
+
  */

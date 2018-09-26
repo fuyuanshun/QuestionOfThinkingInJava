@@ -7,16 +7,22 @@ package exercise.chapter_3;
  */
 public class P52_11 {
     public static void main(String[] args) {
-        //最高有效位为1的二进制数字(31位)
+        //使用十六进制表示最高有效位为1的二进制数字(31位)
         int a = 0x40000000;
+        //移动的次数
+        int count = 0;
+        //使用二进制表示
         System.out.println("未移动之前的值为: " + Integer.toBinaryString(a));
        /* while ((a >>= 1) != 0) {
             System.out.println("向右移动一位之后的值为: " + Integer.toBinaryString(a));
         }*/
         for (int i = 0; i < 31; i++) {
+            count += 1;
+            //有符号右移
             a >>= 1;
             System.out.println("向右移动一位之后的值为: " + Integer.toBinaryString(a));
         }
+        System.out.println("移动了 " + count + " 次");
     }
 }/* Output:
         未移动之前的值为: 1000000000000000000000000000000
@@ -50,4 +56,5 @@ public class P52_11 {
         向右移动一位之后的值为: 100
         向右移动一位之后的值为: 10
         向右移动一位之后的值为: 1
+        向右移动一位之后的值为: 0
 */
