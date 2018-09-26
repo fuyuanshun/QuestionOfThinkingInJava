@@ -10,7 +10,6 @@ public class P37_4 {
 
     public static void main(String[] args) {
         P37_4 dataOnly = new P37_4();
-
     }
 }/* Output:
 
