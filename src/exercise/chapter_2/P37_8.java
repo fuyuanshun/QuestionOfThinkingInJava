@@ -10,23 +10,23 @@ public class P37_8 {
         Test test1 = new Test();
         Test test2 = new Test();
         System.out.println("直接打印Test.i 以及新建的两个对象的i值:");
-        System.out.println("Test.i is " + Test.i);
+        System.out.println("InputNumber.i is " + Test.i);
         System.out.println("test1.i is " + test1.i);
         System.out.println("test2.i is " + test2.i);
 
         increment();
         System.out.println("调用increment()方法后的i值:");
-        System.out.println("Test.i is " + Test.i);
+        System.out.println("InputNumber.i is " + Test.i);
         System.out.println("test1.i is " + test1.i);
         System.out.println("test2.i is " + test2.i);
 
         Test.i -= 10;
-        System.out.println("Test.i - 10 之后的值: ");
-        System.out.println("Test.i is " + Test.i);
+        System.out.println("InputNumber.i - 10 之后的值: ");
+        System.out.println("InputNumber.i is " + Test.i);
         System.out.println("test1.i is " + test1.i);
         System.out.println("test2.i is " + test2.i);
-        System.out.println("Test.i == test1.i is " + (Test.i == test1.i));
-        System.out.println("Test.i == test2.i is " + (Test.i == test2.i));
+        System.out.println("InputNumber.i == test1.i is " + (Test.i == test1.i));
+        System.out.println("InputNumber.i == test2.i is " + (Test.i == test2.i));
     }
 
     private static void increment() {
@@ -34,19 +34,19 @@ public class P37_8 {
     }
 }/* Output:
         直接打印Test.i 以及新建的两个对象的i值:
-        Test.i is 50
+        InputNumber.i is 50
         test1.i is 50
         test2.i is 50
         调用increment()方法后的i值:
-        Test.i is 51
+        InputNumber.i is 51
         test1.i is 51
         test2.i is 51
-        Test.i - 10 之后的值:
-        Test.i is 41
+        InputNumber.i - 10 之后的值:
+        InputNumber.i is 41
         test1.i is 41
         test2.i is 41
-        Test.i == test1.i is true
-        Test.i == test2.i is true
+        InputNumber.i == test1.i is true
+        InputNumber.i == test2.i is true
 */
 
 class Test{
